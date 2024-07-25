@@ -8,10 +8,10 @@ const port = 3000;
 
 app.use(bodyParser.json());
 
-// Serve static files from the 'frontend' directory at the root path
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-// API route for calculation
+
 app.post('/calculate', (req, res) =>
 {
   const { operation } = req.body;
